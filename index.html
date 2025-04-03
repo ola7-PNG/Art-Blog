@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery - Lax.js Scroll Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro-card-container" data-lax="translateY(0 0, 100vh -100vh)">
+        <div class="intro-card" data-lax="opacity(1, 0) backgroundColor(rgba(0, 0, 0, 0.8), white)">
+            <h1>Welcome to Substack Art Gallery</h1>
+            <p>Hi there! 
+                I built this website leveraging Lax.js, a really lightweight and easy-to-use JavaScript library. It lets me craft these smooth, scroll-based animations you see, where elements react dynamically to your scrolling. It's ideal for making landing pages, portfolios, or any website feel truly engaging and visually captivating.experience. </p>
+        </div>
+    </div>
+
+    <div class="section" data-lax="translateY(0 0, 100vh -100vh, 200vh -200vh) rotate(0 0, 100vh 180, 200vh 360)">
+        <h2>Abstract Painting</h2>
+        <p>Explore the depths of imagination.</p>
+        <img src="Glass Art sculpture installation biophilic art colourfulgallery contemporary midjourney ai nature.jpeg" class="art-image" data-lax="inertia-x(0,0) (100vh, 100px) (200vh, -100px) opacity(0, 1, 0)">
+        <img src="b364d267-f061-4ae4-b9c0-dd62ee064629.jpeg" class="art-image" data-lax="inertia-y(0,0) (100vh, -100px) (200vh, 100px) opacity(0, 1, 0)">
+        <img src="f5aef46b-49a7-4488-bd38-d1637d02df87.jpeg" class="art-image" data-lax="inertia-x(0,0) (100vh, -100px) (200vh, 100px) opacity(0, 1, 0)">
+    </div>
+    <div class="section" data-lax="translateY(0 0, 100vh -100vh, 200vh -200vh) rotate(0 0, 100vh -180, 200vh -360)">
+        <h2>Modern Paintings</h2>
+        <p>Form and space redefined.</p>
+        <img src="Lilies.jpeg" class="art-image" data-lax="inertia-x(0,0) (100vh, 100px) (200vh, -100px) opacity(0, 1, 0)">
+        <img src="Seascape Talon.jpeg" class="art-image" data-lax="inertia-y(0,0) (100vh, -100px) (200vh, 100px) opacity(0, 1, 0)">
+        <img src="SF1413 Temp Glass w_Foil - Blue Orchid (40x60) by Classy Art.jpeg" class="art-image" data-lax="inertia-x(0,0) (100vh, -100px) (200vh, 100px) opacity(0, 1, 0)">
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

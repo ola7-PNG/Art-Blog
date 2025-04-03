@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.intro-card-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.intro-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1.5em;
+    z-index: 10;
+    transition: background-color 0.5s ease;
+}
+
+.intro-card h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.section {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 2em;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.section p {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+.section:nth-child(1) {
+    background-image: url('https://source.unsplash.com/1920x1080/?painting,abstract&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBhcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=1920&q=60');
+}
+
+.section:nth-child(2) {
+    background-image: url('https://source.unsplash.com/1920x1080/?sculpture,modern&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwc2N1bHB0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1920&q=60');
+}
+
+.art-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.art-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.art-description {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: black;
+    padding: 20px 40px; /* Increase padding on the left and right */
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.art-description h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.art-description p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.intro-card h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.section {
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 2em;
+    /* Remove to allow left/right alignment */
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: left; /* Left align h2 */
+    width: 100%; /* Ensure h2 spans the width */
+    padding-left: 20px; /* Add padding for visual spacing */
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section p {
+    font-size: 1.1em;
+    color: black;
+    text-align: right; /* Right align p */
+    width: 100%; /* Ensure p spans the width */
+    padding-right: 20px; /* Add padding for visual spacing */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section:nth-child(1) {
+    background-image: url('https://source.unsplash.com/1920x1080/?painting,abstract');
+}
+
+.section:nth-child(2) {
+    background-image: url('https://source.unsplash.com/1920x1080/?sculpture,modern');
+}
+
+.section:nth-child(3) {
+    background-image: url('https://source.unsplash.com/1920x1080/?photography,art');
+}
+
+.section:nth-child(4) {
+    background-image: url('https://source.unsplash.com/1920x1080/?digital,art');
+}
+
+.art-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.art-image:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+
+.art-image:nth-child(2) {
+    top: 50%;
+    right: 10%;
+}
+
+.art-image:nth-child(3) {
+    bottom: 10%;
+    left: 30%;
+}
+
+.art-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 20px; /* Add gap between image and description */
+}
+
+.p {
+   font-family: 'Times New Roman', Times, serif;
+}
